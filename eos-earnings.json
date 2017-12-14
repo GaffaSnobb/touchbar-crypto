@@ -1,0 +1,12 @@
+set json to (do shell script "curl https://api.bitfinex.com/v1/pubticker/eosusd")
+
+tell application "JSON Helper"
+	set result to read JSON from json
+	set price to last_price of result as real
+	set original to 358.7
+	set current to 75.48936607 * price
+	set winnings to current - original
+	set winnings to round (winnings)
+end tell
+
+set result_string to "$" & winnings & ""
