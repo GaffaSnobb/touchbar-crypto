@@ -1,5 +1,5 @@
 # touchbar-crypto
-BTC to USD price for the MacBook Pro Touch Bar.
+Crypto to fiat price for the MacBook Pro Touch Bar.
 Install JSON helper.
 Install BTT (Better Touch Tool)
 
