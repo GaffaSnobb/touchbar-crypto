@@ -1,0 +1,9 @@
+set json to (do shell script "curl https://api.bitfinex.com/v1/pubticker/ltcusd")
+
+tell application "JSON Helper"
+	set result to read JSON from json
+	set price to last_price of result
+	set price to round (price)
+end tell
+
+set result_string to "$" & price & ""
